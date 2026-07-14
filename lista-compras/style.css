@@ -1,0 +1,333 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #2563eb;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 90%;
+  max-width: 700px;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 50px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: white;
+}
+
+#contador {
+  background: #1e3a8a;
+  color: white;
+
+  padding: 8px 18px;
+
+  border-radius: 20px;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* LISTA */
+
+#lista {
+  min-height: 300px;
+}
+
+/* ESTADO VAZIO */
+
+#empty {
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+#empty h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+#empty p {
+  color: #e5e7eb;
+}
+
+/* ITEM */
+
+.item {
+  background: #ffffff;
+
+  color: #1e3a8a;
+
+  padding: 18px 22px;
+
+  border-radius: 12px;
+
+  margin-bottom: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.item span {
+  font-weight: bold;
+}
+
+.item small {
+  background: #2563eb;
+
+  color: white;
+
+  padding: 5px 12px;
+
+  border-radius: 20px;
+}
+
+/* BOTÕES */
+
+.buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 40px;
+}
+
+button {
+  border: none;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+
+  font-weight: bold;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* BOTÃO ADICIONAR */
+
+#btnAdicionar {
+  background: white;
+
+  color: #2563eb;
+
+  padding: 14px 28px;
+
+  border-radius: 10px;
+}
+
+#btnAdicionar:hover {
+  background: #f3f4f6;
+}
+
+/* BOTÃO EDITAR */
+
+#btnEditar {
+  background: #1e3a8a;
+
+  color: white;
+
+  padding: 14px 28px;
+
+  border-radius: 10px;
+}
+
+#btnEditar:hover {
+  background: #172554;
+}
+
+/* MODAL */
+
+.modal {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ESCONDER */
+
+.hidden {
+  display: none;
+}
+
+/* BOX DO MODAL */
+
+.box {
+  width: 420px;
+  max-width: 90%;
+
+  background: white;
+
+  color: #1e3a8a;
+
+  border-radius: 12px;
+
+  padding: 25px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.box h2 {
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+
+.box input {
+  width: 100%;
+
+  padding: 14px;
+
+  margin-bottom: 15px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  font-size: 15px;
+}
+
+.box input:focus {
+  border-color: #2563eb;
+}
+
+/* BOTÃO DO MODAL */
+
+#salvarItem {
+  width: 100%;
+
+  background: #2563eb;
+
+  color: white;
+
+  padding: 14px;
+
+  border-radius: 8px;
+}
+
+#salvarItem:hover {
+  background: #1d4ed8;
+}
+
+/* LISTA DE EDIÇÃO */
+
+#listaEditar {
+  margin-bottom: 20px;
+}
+
+.editItem {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 12px;
+}
+
+.editItem input {
+  flex: 1;
+
+  margin: 0;
+}
+
+/* EXCLUIR */
+
+.btnExcluir {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background: #1e3a8a;
+
+  color: white;
+}
+
+.btnExcluir:hover {
+  background: #172554;
+}
+
+/* CONCLUIR */
+
+#fecharEditar {
+  width: 100%;
+
+  background: #2563eb;
+
+  color: white;
+
+  padding: 14px;
+
+  border-radius: 8px;
+}
+
+#fecharEditar:hover {
+  background: #1d4ed8;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+}
