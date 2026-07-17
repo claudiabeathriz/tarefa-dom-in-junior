@@ -12,7 +12,7 @@ Projeto desenvolvido como desafio técnico utilizando **HTML, CSS e JavaScript**
 
 ## Acesse a aplicação:
 
-**https://seu-usuario.github.io/lista-compras/**
+**https://claudiabeathriz.github.io/tarefa-dom-in-junior/**
 
 ## Conceitos aplicados
 
